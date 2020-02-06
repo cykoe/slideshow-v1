@@ -1,13 +1,24 @@
 let timeout = 0;
 
+/**
+ * initialize auto sliding
+ */
 showSlide(0, null);
 
+/**
+ * used after manually clicking on prev/next
+ * @param evt
+ */
 function changeSlide(evt) {
   const index = parseInt(evt.htmlFor) - 1;
-  console.log(index);
   showSlide(index, index-1);
 }
 
+/**
+ * auto-sliding
+ * @param newIndex
+ * @param oldIndex
+ */
 function showSlide(newIndex, oldIndex) {
   const sliders = document.querySelectorAll('.radio-btn');
   if (newIndex > sliders.length - 1) {
