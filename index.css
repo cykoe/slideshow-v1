@@ -10,11 +10,16 @@ body {
     justify-content: flex-start;
 }
 
+a {
+    text-decoration: underline;
+    color: white;
+}
+
 .container {
     margin: 0 auto;
     width: 60vw;
     color: white;
-    height: 300px;
+    height: 600px;
     position: relative;
     overflow: hidden;
     border-radius: 1em;
