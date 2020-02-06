@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carousel Demo</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+<h2 style="text-align: center; color: white; margin-top: 20px;">Carousel Demo</h2>
+<div class="container">
+    <input type="radio" name="activator" id="0" class="radio-btn" checked="checked">
+    <input type="radio" name="activator" id="1" class="radio-btn">
+    <input type="radio" name="activator" id="2" class="radio-btn">
+    <!-- end of radio inputs   -->
+
+    <div class="controls">
+        <label for="1" class="carousel__control carousel__control--forward" onclick="changeSlide(this)"></label>
+        <label for="2" class="carousel__control carousel__control--backward" onclick="changeSlide(this)"></label>
+    </div>
+    <div class="controls">
+        <label for="2" class="carousel__control carousel__control--forward" onclick="changeSlide(this)"></label>
+        <label for="0" class="carousel__control carousel__control--backward" onclick="changeSlide(this)"></label>
+    </div>
+    <div class="controls">
+        <label for="0" class="carousel__control carousel__control--forward" onclick="changeSlide(this)"></label>
+        <label for="1" class="carousel__control carousel__control--backward" onclick="changeSlide(this)"></label>
+    </div>
+    <!-- end of backwards/forwards button -->
+
+    <div class="slides">
+        <div class="carousel__slide">
+            <img src="https://unsplash.it/800/600?random" alt="">
+        </div>
+        <div class="carousel__slide">
+            <img src="https://unsplash.it/1200/600?random" alt="">
+        </div>
+        <div class="carousel__slide">
+            <img src="https://unsplash.it/400/800?random" alt="">
+        </div>
+    </div>
+    <!-- end of slider  -->
+
+    <div class="indicators">
+        <label for="0" class="carousel__indicator"></label>
+        <label for="1" class="carousel__indicator"></label>
+        <label for="2" class="carousel__indicator"></label>
+    </div>
+    <!-- end of dots   -->
+    <script src="index.js"></script>
+</div>
+</body>
+</html>
